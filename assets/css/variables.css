@@ -1,0 +1,11 @@
+/* variables */
+:root{
+  --bg-color:#ddd;
+  --font-color:#333;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png")
+}
+.dark-mode{
+  --bg-color:#333;
+  --font-color:#ccc;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+}
