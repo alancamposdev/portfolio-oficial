@@ -5,6 +5,7 @@ inicialmente estático.
 
 
 > ⚙ Projeto em desenvolvimento...
+
 Desenvolvedor:  *Alan Campos*
 ## Tecnologias 
 
@@ -14,4 +15,3 @@ Desenvolvedor:  *Alan Campos*
 * Icons
 * Google Fonts
 
-## execução inicial
