@@ -14,4 +14,7 @@ Desenvolvedor:  *Alan Campos*
 * Icons
 * Google Fonts
 
-## execução inicial
+### execução inicial
+
+- acesso via github-pages
+ [Acesso ao projeto](https://alancamposdev.github.io/portfolio-oficial/);
