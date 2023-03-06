@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 /* variables */
 :root{
   --bg-color:#ddd;
-  --font-color:#333;
-  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png")
+  --font-color:#070707;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+
+  /* fonts  */
+  --font-logo: Cinzel, serif;
+  --font-top: 'Poppins', sans-serif;
+
+   /* paleta game of thrones */
+
+  --color-1:#E3A139;
+  --color-2:#B45B08;
+  --color-3:#D6C29F;
+  --color-4:#A34F38;
+  --color-5:#6B6C41;
 }
 .dark-mode{
   --bg-color:#333;
   --font-color:#ccc;
   --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
 }
+
+
+
+
+ 

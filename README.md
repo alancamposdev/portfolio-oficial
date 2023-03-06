@@ -16,3 +16,5 @@ Desenvolvedor:  *Alan Campos*
 * Google Fonts
 
 ## execução inicial
+acesso ao site via github-page
+[Abrir o site](https://alancamposdev.github.io/portfolio-oficial/)
