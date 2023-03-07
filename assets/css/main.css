@@ -24,3 +24,19 @@ section {
   width: 100%;
   padding: 10rem 6% 2rem;
 }
+
+@media (max-width:1200px) {
+  html{
+    /* font-size: 55%; */
+  }
+  
+}
+
+@media (max-width:991px) {
+  section{
+    padding: 10rem 3% 2rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
