@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-/* variables */
+/* variables color*/
 :root{
   --bg-color:#ddd;
-  --font-color:#070707;
+  --second-bg-color:#323946;
+  --text-color:#fff;
+  --main-color:#F36B37;
+
   --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
 
   /* fonts  */
@@ -22,7 +25,7 @@
 }
 .dark-mode{
   --bg-color:#333;
-  --font-color:#ccc;
+  --text-color:#ccc;
   --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
 }
 
