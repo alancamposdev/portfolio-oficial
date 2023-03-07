@@ -1,0 +1,72 @@
+.portfolio{
+  background: var(--second-bg-color);
+  color: var(--text-color);
+}
+.portfolio h2{
+  margin-bottom: 4rem;
+}
+.portfolio__content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  align-items: center;
+  gap:1rem;
+
+}
+.portfolio-box{
+ position: relative;
+ border-radius: 1rem;
+ overflow: hidden;
+ box-shadow: 0 0 .5rem var(--bg-color);
+ width: 100%;
+ height: 100%;
+ 
+ 
+}
+
+.portfolio-box img{
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;  
+}
+.portfolio-box:hover img{
+  transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ padding: 0 1rem;
+ background: linear-gradient(rgba(0,0,0,.01), var(--main-color));
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ transform:  translateY(100%);
+ transition: .5s ease;
+ 
+}
+
+.portfolio-box:hover .portfolio-layer{
+  transform:  translateY(0);
+}
+.portfolio-layer h4{
+  font-size: 1.3rem;
+}
+.portfolio-layer p{
+  font-size: 1rem;  
+}
+.portfolio-layer a{
+  width: 3rem;
+  height: 3rem;
+  background: var(--text-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.portfolio-layer i {
+  font-size: 2rem;
+  color: var();
+}

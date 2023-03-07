@@ -1,25 +1,26 @@
-html{
-  
+html {
   overflow-x: hidden;
 }
-body{
-  font-family: var(--font-top); 
+
+body {
+  font-family: var(--font-top);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: var(--bg-color) url() no-repeat;
+  /* background: #ccc; */
   background-size: cover;
   background-position: center;
 }
-.container{
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(172, 15, 15);
 }
-section{
+
+section {
   min-height: 100vh;
   width: 100%;
   padding: 10rem 6% 2rem;
-  
 }

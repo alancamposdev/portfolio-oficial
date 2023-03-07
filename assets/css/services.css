@@ -1,0 +1,36 @@
+.services h2{
+  margin-bottom: 3rem;
+}
+.services__content{
+  display: flex;
+  gap:2rem;
+  align-items: center;  
+  
+}
+
+.services-box{
+  flex:1 1 30rem;
+  padding: 1rem;
+  border: .2rem solid var(--second-bg-color);
+  border-radius: 2rem;
+  text-align: center;
+
+}
+
+.services-box:hover{
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.services-box ion-icon{
+  font-size: 6rem;
+  color: var(--main-color)
+}
+
+.services-box h3{
+  font-size: 2rem;
+}
+.services-box p{
+  font-size: 1rem;
+  margin: 1rem 0 3rem;
+}
