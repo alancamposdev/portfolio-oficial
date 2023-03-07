@@ -2,9 +2,31 @@
  width: 100%;
  background: #000;
  color: #CCC;
+ position: relative;
 }
 .footer .copy{
   width: 100%;
   text-align: center;
   padding: 1rem;
+}
+
+.footer-iconTop a{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background:var(--main-color);
+  color:var(--text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: .6rem;
+  transition: .6s ;
+}
+.footer-iconTop a:hover{
+  box-shadow: 0 0 1rem var(--main-color);
 }
