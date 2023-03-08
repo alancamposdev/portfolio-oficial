@@ -15,3 +15,60 @@
 .btn:hover {
   box-shadow: none;
 }
+
+/* botão mobile  */
+
+.btn-menuMobile{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border:1px solid transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  color:#fff;
+  z-index: 1000;  
+}
+
+.btn-menuMobile .line,
+.btn-menuMobile .line::before,
+.btn-menuMobile .line::after{
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background:#fff;
+  border-radius: 3px;
+  transition: transform .3s ease;  
+  
+}
+.btn-menuMobile .line::before,
+.btn-menuMobile .line::after
+{
+  content: '';  
+  position: absolute;
+  left: 0;  
+  
+}
+.btn-menuMobile .line::before{
+  top: -12px; 
+}
+
+.btn-menuMobile .line::after{
+  top: 12px;    
+}
+
+.btn-menuMobile:hover .line{
+  background-color: transparent;
+  
+}
+.btn-menuMobile:hover .line::before{
+  transform: rotate(45deg);
+  top:0px;
+}
+.btn-menuMobile:hover .line::after{
+  transform: rotate(-45deg);
+  bottom:-20px;
+  top:0px;  
+}
