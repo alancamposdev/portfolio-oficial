@@ -16,6 +16,42 @@
   box-shadow: none;
 }
 
+/* btn-dowload */
+
+.btn1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;  
+  background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+  border:1px solid transparent;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  box-shadow: 0 0 1rem var(--main-color);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;  
+}
+
+.btn1 ion-icon {
+  margin-right: 8px;
+}
+
+.btn1:hover {
+  background: #fff;
+  color: #333;
+  border-color: #333;
+  box-shadow: none;
+  
+  
+}
+
+
+
 /* botão mobile  */
 
 .btn-menuMobile{
@@ -72,3 +108,7 @@
   bottom:-20px;
   top:0px;  
 }
+
+/* botão restrito  */
+
+

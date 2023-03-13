@@ -4,8 +4,10 @@
   background: radial-gradient(#4e5756, #364033, #06100b);
 }
 .banner .container {
+  position: relative;
   display: flex;
-  /* border: none; */
+  border: none;
+  
 }
 .banner__content {
   flex: 1;
@@ -13,15 +15,22 @@
   justify-content: center;
   align-items: left;
   flex-direction: column;
+  
 }
 .banner__content h1 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.3;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-duration: 1s;
 }
 .banner__content h3 {
   font-size: 2rem;
   font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-duration: .7s;
 }
 .banner__content h3 span {
   color: var(--main-color);
@@ -29,10 +38,16 @@
 
 .banner__content h3:nth-child(3) {
   margin-bottom: 1rem;
+  animation: slideTop 1s ease forwards;
+  animation-delay: .7s;
 }
 
 .banner__content p {
   font-size: 1rem;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-duration: 1s;
+  
 }
 .social-media a {
   display: inline-flex;
@@ -46,6 +61,9 @@
   font-size: 1.6rem;
   color: var(--main-color);
   margin: 3rem 1rem 3rem 0;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
 }
 
 .social-media a:hover {
@@ -60,7 +78,15 @@
   clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%);
   max-width: 300px;
   width: 30vw;
+  animation: floatImage 4s ease-in-out infinite;
+  animation-delay: 3s;
 }
+@keyframes floatImage{
+ 0%{ transform: translateY(0);}
+ 50%{ transform: translateY(-24px);}
+ 100%{ transform: translateY(0);}
+}
+
 .avatar img {
   position: relative;
   width: 100%;
@@ -68,4 +94,39 @@
   top: 3rem;
 
   clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%);
+
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 2s;
+}
+@keyframes zoomIn{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#banner .btn1{
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.arrow-bottom{
+  position: absolute;
+  bottom: 1%;
+  right: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  border-radius: 50%;
+  opacity: 1;
+  animation: floatImage 2s ease infinite;
+  animation-delay: 10s;
 }

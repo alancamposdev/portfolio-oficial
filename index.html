@@ -30,6 +30,7 @@
     <!-- scripts main -->
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/linkActive.js" defer></script>
+    <script src="./assets/js/animationWriting.js" defer></script>
 
     <!-- ion-icons  -->
     <script
@@ -50,19 +51,19 @@
         <nav>
           <ul class="header__nav">
             <li class="header__item">
-              <a href="#banner" class="header__link active">Inicio</a>
+              <a href="#banner" style="--i:1" class="header__link active">Inicio</a>
             </li>
             <li class="header__item">
-              <a href="#about" class="header__link">Sobre Mim</a>
+              <a href="#about" style="--i:2" class="header__link">Sobre Mim</a>
             </li>
             <li class="header__item">
-              <a href="#services" class="header__link">Serviços</a>
+              <a href="#services" style="--i:3" class="header__link">Skills</a>
             </li>
             <li class="header__item">
-              <a href="#portfolio" class="header__link">Portfólio</a>
+              <a href="#portfolio" style="--i:4" class="header__link">Portfólio</a>
             </li>
             <li class="header__item">
-              <a href="#contact" class="header__link">Contato</a>
+              <a href="#contact" style="--i:5" class="header__link">Contato</a>
             </li>
           </ul>
         </nav>
@@ -72,15 +73,23 @@
         </button>
 
         <div class="area-btns">
-          <button class="btnArea-popup" title="Area restrita">
-          <ion-icon name="person-outline" ></ion-icon>
-          <p>Area restrita</p>
-        </button>
 
-          <input type="button" id="btnMode" />
-          <label for="btnMode" class="btn-mode">
-            aqer
+          <!-- btn Area restrita  -->
+
+          <!-- <button class="btnArea-popup" title="Area restrita">
+            <ion-icon ion-icon name="person-outline" ></ion-icon>
+            <p>Area restrita</p>
+          </button> -->
+          <button title="area restrita" class="btn-restrito">            
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </button>
+
+          <!-- botão mode-->
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
           </label>
+          
         </div>
       </div>
     </header>
@@ -92,18 +101,22 @@
           
           <h3>Olá, Este sou eu</h3>
           <h1>Alan Campos</h1>
-          <h3>Eu sou <span>Desenvolvedor Front End</span></h3>
+          <h3>Eu sou <span class="multiple-text"></span></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta excepturi eos aliquam a tempore vero modi facilis error,  iure et voluptas magni.</p>
   
           <div class="social-media">
-            <a href="#">
+            <a href="#" style="--i:7">
               <ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="#">
+            <a href="#" style="--i:8">
               <ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#">
+            <a href="#" style="--i:9">
               <ion-icon name="logo-github"></ion-icon></a>
-          </div>
-          <a href="" class="btn" download="">Baixar CV</a>
+          </div>          
+
+          <a href="cv.pdf" class="btn1" download>
+            <ion-icon name="cloud-download-outline"></ion-icon>
+            <span>Download CV</span>
+          </a>
           
         </div>
         
@@ -111,6 +124,10 @@
           <img src="assets/img/avatar2.png" alt="imagem pessoal" class="avatar-img">
         </div>
       </div>
+      <a href="#about">
+        <!-- <ion-icon name="chevron-down-outline" class="arrow-bottom"></ion-icon> -->
+        <ion-icon name="arrow-down-outline" class="arrow-bottom"></ion-icon>
+      </a>
     </section>
 
     <!-- seção sobre mim  -->
@@ -306,5 +323,8 @@
 
       </div>
     </footer>
+     
+    <!-- biblioteca de animação Typed.js  -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   </body>
 </html>
