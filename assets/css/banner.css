@@ -118,8 +118,9 @@
 
 .arrow-bottom{
   position: absolute;
-  bottom: 1%;
-  right: 50%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,50%);
   width: 60px;
   height: 60px;
   font-size: 60px;

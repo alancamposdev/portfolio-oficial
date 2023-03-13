@@ -9,11 +9,12 @@ inicialmente estático.
 Desenvolvedor:  *Alan Campos*
 ## Tecnologias 
 
-* HTML
-* CSS
-* Java Script
-* Icons
-* Google Fonts
+* Estruturação - HTML 
+* Estilização  - CSS  
+* Dinamismo    - Java Script 
+* Icones  - "ionicons"
+* Fontes  - "Google Fonts"
+* Library - "Typed.js"(animation)
 
 ## execução inicial
 acesso ao site via github-page
